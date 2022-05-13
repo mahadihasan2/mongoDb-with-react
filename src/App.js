@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AdUser from './components/AdUser/AdUser';
 import Home from './components/Home/Home';
+import UpdateUser from './components/UpdateUser/UpdateUser';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/user/add' element={<AdUser></AdUser>}></Route>
+        <Route path='/update/:id' element={<UpdateUser></UpdateUser>}></Route>
       </Routes>
     </div>
   );
